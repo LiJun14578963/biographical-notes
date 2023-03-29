@@ -1,239 +1,291 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
   <title>我的简历</title>
   <style>* {
-    box-sizing: border-box
-  }
-
-  body {
-    background: #eee;
-    margin: 20px 0
-  }
-
-  .mt14 {
-    margin-top: 14px
-  }
-
-  article {
-    width: 21cm;
-    min-height: 29.7cm;
-    background: #fff;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 1em
-  }
-
-  p {
-    margin: .3em 0
-  }
-
-  h1 {
-    font-size: 25px;
-    margin-top: 0
-  }
-
-  h4, h5, h6 {
-    font-weight: 400
-  }
-
-  ol, ul {
-    list-style: none;
-    padding: 0;
-    margin: 0
-  }
-
-  strong {
-    color: #f60
-  }
-
-  a {
-    color: #999;
-    text-decoration: none;
-    border-bottom: 1px solid
-  }
-
-  li, p {
-    color: #666
-  }
-
-  strong {
-    font-weight: 400
-  }
-
-  h3, h4, h5, h6 {
-    margin: 0
-  }
-
-  .bio {
-    position: relative
-  }
-
-  .bio img {
-    position: absolute;
-    top: 0;
-    right: 0
-  }
-
-  .projects p {
-    color: #666
-  }
-
-  .projects strong {
-    color: #f60
-  }
-
-  .projects > ol {
-    margin-top: 0;
-    list-style-position: inside;
-    padding: 0
-  }
-
-  .projects > ol > li {
-    margin-bottom: 24px
-  }
-
-  .projects > ol > li > header {
-    display: flex;
-    justify-content: space-between
-  }
-
-  .projects > ol > li h3 {
-    display: inline-block
-  }
-
-  #skills {
-    width: 670px;
-    height: 270px
-  }
-
-  @media print {
-    #skills {
-      display: none
+      box-sizing: border-box;
     }
-  }
 
-  .skills > .wrapper {
-    display: flex;
-    justify-content: space-between
-  }
-
-  .skills > .wrapper > :first-child {
-    margin-right: 24px
-  }
-
-  .skills > .wrapper > #skills {
-    padding: 0
-  }
-
-  .skills > .wrapper > ul {
-    color: #666
-  }
-
-  .skills > .wrapper strong {
-    color: #f60
-  }
-
-  .skills > .wrapper > ul > li {
-    line-height: 1.2;
-    margin-bottom: 8px
-  }
-
-  .openSource header img {
-    position: absolute;
-    top: 0;
-    right: 0
-  }
-
-  .openSource > ul > li {
-    margin-bottom: 24px
-  }
-
-  .openSource1 > ul > li {
-    margin-bottom: 12px
-  }
-
-  .openSource1 header, .openSource header {
-    position: relative;
-    display: flex;
-    justify-content: space-between
-  }
-
-  .jobs > ol > li {
-    margin: 12px 0
-  }
-
-  .jobs header {
-    display: flex;
-    color: #666;
-    margin-bottom: 12px
-  }
-
-  .jobs header > h3 {
-    font-size: 18px;
-    color: #333
-  }
-
-  .jobs header > h4 {
-    margin-left: 1em;
-    font-size: 18px
-  }
-
-  .jobs header > span {
-    font-size: 18px;
-    margin-left: auto
-  }
-
-  @media (max-width: 500px) {
     body {
-      margin: 0
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    .mt14 {
+      margin-top: 14px;
     }
 
     article {
-      width: auto;
-      height: auto
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }</style>
+  <style media="print">body {
+      margin: 0;
+    }
+
+    .page2 {
+      /*page-break-before: always;*/
+      page-break-before: auto;
+      margin-top: 30px;
+    }</style>
+  <style>body {
+    }
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
     }
 
     .bio img {
-      display: none
+      position: absolute;
+      top: 0;
+      right: 0;
+    }</style>
+
+  <style>.projects {
     }
 
-    .skills .wrapper {
-      flex-direction: column
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects > ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects > ol > li {
+      margin-bottom: 24px;
+    }
+
+    .projects > ol > li > header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects > ol > li h3 {
+      display: inline-block;
+    }</style>
+  <style>.skills {
     }
 
     #skills {
-      width: auto
+      width: 670px;
+      height: 270px;
+    }
+
+    @media print {
+      #skills {
+        display: none;
+      }
+    }
+
+    .skills > .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills > .wrapper > :first-child {
+      margin-right: 24px;
+    }
+
+    .skills > .wrapper > #skills {
+      padding: 0px;
+    }
+
+    .skills > .wrapper > ul {
+      color: #666;
+    }
+
+    .skills > .wrapper strong {
+      color: #f60;
+    }
+
+    .skills > .wrapper > ul > li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }</style>
+  <style>.openSource {
+    }
+
+    .openSource > h2 {
+    }
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource > ul {
+    }
+
+    .openSource > ul > li {
+      margin-bottom: 24px;
+    }
+
+    .openSource1 > ul > li {
+      margin-bottom: 12px;
+    }
+
+    .openSource1 header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {
+    }</style>
+  <style>.jobs {
+    }
+
+    .jobs > h2 {
+    }
+
+    .jobs > ol {
+    }
+
+    .jobs > ol > li {
+      margin: 12px 0;
     }
 
     .jobs header {
-      flex-direction: column
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
     }
 
-    .jobs header > h3, .jobs header > h4, .jobs header > span {
-      margin: 0
+    .jobs header > h3 {
+      font-size: 18px;
+      color: #333;
     }
-  }</style>
-  <style media="print">body {
-    margin: 0
-  }
 
-  .page2 {
-    page-break-before: auto;
-    margin-top: 30px
-  }</style>
+    .jobs header > h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header > span {
+      font-size: 18px;
+      margin-left: auto;
+    }</style>
+  <style>@media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+
+      .jobs header {
+        flex-direction: column;
+      }
+
+      .jobs header > h3,
+      .jobs header > h4,
+      .jobs header > span {
+        margin: 0;
+      }
+    }</style>
 </head>
+
 <body>
 <article>
-  <section class="bio"><h1>李 军</h1> <img src="a.0cec55b3.png" alt="" width="120" height="120">
-    <p> 男 | 26岁 | 长沙 | 本科 | 中南林业科技大学 </p>
-    <p> 手机：18374968767 | 微信：lijun8758 | 邮箱：1094453726@qq.com </p>
-    <p>我的博客目前已有 12 篇技术文章：<a href="https://juejin.cn/user/2714051232939112/posts">我的博客</a></p>
-    <p>我的 GitHub 过去一年有 300 次提交：<a href="https://github.com/LiJun14578963/">GitHub</a></p></section>
-  <section class="skills"><h2>技能</h2>
+  <section class="bio">
+    <h1>李 军</h1>
+    <img src="/a.6220ceb9.png" alt="" width="120" height="120">
+    <p>
+      男 | 26岁 | 长沙 | 本科 | 中南林业科技大学
+    </p>
+    <p>
+      手机：18374968767 | 微信：lijun8758 | 邮箱：1094453726@qq.com
+    </p>
+    <p>我的博客目前已有 13 篇技术文章：<a href="https://juejin.cn/user/2714051232939112/posts">我的博客</a></p>
+    <p>我的 GitHub 过去一年有 300 次提交：<a href="https://github.com/LiJun14578963/">GitHub</a></p>
+  </section>
+
+  <section class="skills">
+    <h2>技能</h2>
     <div class="wrapper">
       <div id="skills"></div>
       <ul>
@@ -248,92 +300,163 @@
       </ul>
     </div>
   </section>
-  <section class="openSource"><h2>开源项目</h2>
-    <ul><br>
+
+  <section class="openSource">
+    <h2>开源项目</h2>
+    <ul>
+      <br>
       <li>
-        <header><h3> UI 组件库「 Vue2 」 </h3> <span> <a href="https://github.com/LiJun14578963/gulu-1">源码链接</a> <a
-          href="https://lijun14578963.github.io/gulu-1/">项目预览</a> </span></header>
-        <h4>项目描述：</h4> 这是一款基于<strong> Vue </strong>开发的 UI框架。<br> 组件库内的主要组件有 <strong>
-        layout </strong>布局组件、各种样式按钮、顶部弹出信息、弹窗式对话框、<strong> Input </strong>组件、切换标签 <strong>
-        Tabs </strong>组件等。 组件简洁美观易用，泛用性强，可作为前端开发的效率工具。<br>组件样式采用了简洁风的设计，<strong>
-        模块化 </strong>的源代码简洁明了，易于阅读，UI组件封装制作过程，让我对Vue有了更深的理解和认识。 <h4>项目经验：</h4>
-        开发过程中项目中各个组件拆分合理，分析需求、分解思路清晰，可实现高效<strong> 模块化 </strong>编程开发。<br> 可以使用<strong>
-        props </strong>和<strong> 自定义事件 </strong>解决父子组件之间的通信问题，也可以使用<strong>
-        inject/provide </strong>组合方法轻松实现跨级访问祖先组件属性和方法。<br> 封装组件需要注意影响<strong>
-        最小化 </strong>原则，各项设置尽量只影响自己封装的组件。不要影响用户的项目编写不要与用户常见的命名冲突。
+        <header>
+          <h3> UI 组件库「 Vue2 」 </h3>
+          <span>
+              <a href="https://github.com/LiJun14578963/gulu-1">源码链接</a>
+              <a href="https://lijun14578963.github.io/gulu-1/">项目预览</a>
+            </span>
+        </header>
+        <h4>项目描述：</h4>
+        这是一款基于<strong> Vue </strong>开发的 UI框架。<br>
+        组件库内的主要组件有 <strong> layout </strong>布局组件、各种样式按钮、顶部弹出信息、弹窗式对话框、<strong>
+        Input </strong>组件、切换标签 <strong> Tabs </strong>组件等。
+        组件简洁美观易用，泛用性强，可作为前端开发的效率工具。<br>组件样式采用了简洁风的设计，<strong> 模块化 </strong>的源代码简洁明了，易于阅读，UI组件封装制作过程，让我对Vue有了更深的理解和认识。
+        <h4>项目经验：</h4>
+        开发过程中项目中各个组件拆分合理，分析需求、分解思路清晰，可实现高效<strong> 模块化 </strong>编程开发。<br>
+        可以使用<strong> props </strong>和<strong> 自定义事件 </strong>解决父子组件之间的通信问题，也可以使用<strong>
+        inject/provide </strong>组合方法轻松实现跨级访问祖先组件属性和方法。<br>
+        封装组件需要注意影响<strong> 最小化 </strong>原则，各项设置尽量只影响自己封装的组件。不要影响用户的项目编写不要与用户常见的命名冲突。
       </li>
       <li>
-        <header><h3> 记账应用「 Vue2 」 </h3> <span> <a href="https://github.com/LiJun14578963/wangcai">源码链接</a> <a
-          href="https://lijun14578963.github.io/morney-3-website/#/money">项目预览</a> </span></header>
-        <h4>项目描述：</h4> 这是一款基于<strong> Vue 2/TypeScript/Webpack </strong>构建的记账应用，使用了<strong>
-        Vuex，VueRouter </strong>等工具库，构建形式为SFC 单页面应用。 <br>用户可以进行日常生活中各项收支流水的记账，简单的加减乘除运算，添加编辑标签，书写备注，查看历史账目信息。用户记录的各项数据，如标签、备注、收支金额、记录时间等，均采用了<strong>本地存储</strong>方式。
-        <br>主要页面有:收支记账、标签列编辑、可视化账本记录查看。底部为点击切换各页面的图标导航栏。 <br>项目的各页面切换同样采用前端路由，用户数据采用<strong>
-        Vuex </strong>管理。 <h4>项目经验：</h4> 基于<strong> Vue 2、TypeScript </strong>和<strong> vue-cli </strong>脚手架进行开发，vue-cli脚手架内置Webpack，需要注意<strong>
-        Webpakc </strong>的各项配置以及<strong> TypeScript </strong>与Vue之间的配置。 <br>由于各页面和组件之数据流向复杂，故统一使用<strong>
-        Vuex </strong>工具管理用户数据状态，并使用<strong> localStorage </strong>以控制用户数据在本地的持久化，存储和读取等。
+        <header>
+          <h3> 记账应用「 Vue2 」 </h3>
+          <span>
+              <a href="https://github.com/LiJun14578963/wangcai">源码链接</a>
+              <a href="https://lijun14578963.github.io/morney-3-website/#/money">项目预览</a>
+            </span>
+        </header>
+        <h4>项目描述：</h4>
+        这是一款基于<strong> Vue 2/TypeScript/Webpack </strong>构建的记账应用，使用了<strong> Vuex，VueRouter </strong>等工具库，构建形式为SFC
+        单页面应用。
+        <br>用户可以进行日常生活中各项收支流水的记账，简单的加减乘除运算，添加编辑标签，书写备注，查看历史账目信息。用户记录的各项数据，如标签、备注、收支金额、记录时间等，均采用了<strong>本地存储</strong>方式。
+        <br>主要页面有:收支记账、标签列编辑、可视化账本记录查看。底部为点击切换各页面的图标导航栏。
+        <br>项目的各页面切换同样采用前端路由，用户数据采用<strong> Vuex </strong>管理。
+
+        <h4>项目经验：</h4>
+        基于<strong> Vue 2、TypeScript </strong>和<strong> vue-cli </strong>脚手架进行开发，vue-cli脚手架内置Webpack，需要注意<strong>
+        Webpakc </strong>的各项配置以及<strong> TypeScript </strong>与Vue之间的配置。
+        <br>由于各页面和组件之数据流向复杂，故统一使用<strong> Vuex </strong>工具管理用户数据状态，并使用<strong>
+        localStorage </strong>以控制用户数据在本地的持久化，存储和读取等。
         <br>分析设计需求，将项目中各个页面也进行<strong> 组件化 </strong>的拆分，将具备重复功能的组件进行复用，减少重复。
       </li>
       <li>
-        <header><h3> 云笔记应用「 Vue2 」 </h3> <span> <a href="https://github.com/LiJun14578963/wangcai">源码链接</a> <a
-          href="https://heycn.gitee.io/elephant-notebook-website/#/login">项目预览</a> </span></header>
-        <h4>项目描述：</h4> 这是一个基于 Vue /<strong> element-ui </strong>/ Vuex 实现与<strong> 后端交互 </strong>的 PC
-        端在线笔记。 <br>主要功能包括：账户创建/登录、新建笔记本、Markdown 支持、删除笔记放入回收站、笔记恢复、笔记彻底
-        删除、用户退出登录等。 <br>项目同样采用前端路由，<strong> Vuex </strong>状态库进行管理。 <h4>项目经验：</h4> 对于约定好的<strong>
-        HTTP </strong>请求进行封装，可提高编写<strong>
-        AJAX </strong>的效率。封装好的请求对于用户数据同步中，大量使用<strong> Promise </strong>语句，链式调用避免回调地狱，为项目开发提供了很大便利。
+        <header>
+          <h3> 云笔记应用「 Vue2 」 </h3>
+          <span>
+              <a href="https://github.com/LiJun14578963/wangcai">源码链接</a>
+              <a href="https://heycn.gitee.io/elephant-notebook-website/#/login">项目预览</a>
+            </span>
+        </header>
+        <h4>项目描述：</h4>
+        这是一个基于 Vue /<strong> element-ui </strong>/ Vuex 实现与<strong> 后端交互 </strong>的 PC 端在线笔记。
+        <br>主要功能包括：账户创建/登录、新建笔记本、Markdown 支持、删除笔记放入回收站、笔记恢复、笔记彻底 删除、用户退出登录等。
+        <br>项目同样采用前端路由，<strong> Vuex </strong>状态库进行管理。
+
+        <h4>项目经验：</h4>
+        对于约定好的<strong> HTTP </strong>请求进行封装，可提高编写<strong> AJAX </strong>的效率。封装好的请求对于用户数据同步中，大量使用<strong>
+        Promise </strong>语句，链式调用避免回调地狱，为项目开发提供了很大便利。
         <br>统一使用<strong> Vuex </strong>工具管理用户数据状态，state记录用户数据状态，各组件使用<strong>
         Gettings </strong>进行数据信息的获取，使用<strong> Mutations </strong>进行同步的状态变更，使用<strong>
-        Actions </strong>进行异步操作，向服务器发送数据同步请求。 <br>使用前端路由定位要编辑的笔记，使用query方法进行请求，并配合使用组件内导航守卫来监听<strong>
-        query </strong>的变化，达成更新数据和切换页面。
+        Actions </strong>进行异步操作，向服务器发送数据同步请求。
+        <br>使用前端路由定位要编辑的笔记，使用query方法进行请求，并配合使用组件内导航守卫来监听<strong> query </strong>的变化，达成更新数据和切换页面。
       </li>
     </ul>
   </section>
-  <section class="openSource1"><h2>简易代码库实现</h2>
+  <section class="openSource1">
+    <h2>简易代码库实现</h2>
     <ul>
       <li class="page2">
-        <header><h4>1.Canvas作品（CSS3和动画动态绘制图像）</h4> <span> <a
-          href="https://github.com/LiJun14578963/canvas-demo-1">源码链接</a> <a
-          href="https://heycn.gitee.io/canvas-demo/">项目预览</a> </span></header>
+        <header>
+          <h4>1.Canvas作品（CSS3和动画动态绘制图像）</h4>
+          <span>
+              <a href="https://github.com/LiJun14578963/canvas-demo-1">源码链接</a>
+              <a href="https://heycn.gitee.io/canvas-demo/">项目预览</a>
+            </span>
+        </header>
       </li>
       <li>
-        <header><h4>2.自己写的DOM库(实现了元素选择、元素创建、事件委托、滑动手势等常见功能)</h4> <span> <a
-          href="https://github.com/LiJun14578963/-DOM">源码链接</a> <a
-          href="https://github.com/LiJun14578963/-DOM/blob/main/src/dom.js/">项目预览</a> </span></header>
-        <p></p></li>
+        <header>
+          <h4>2.自己写的DOM库(实现了元素选择、元素创建、事件委托、滑动手势等常见功能)</h4>
+          <span>
+            <a href="https://github.com/LiJun14578963/-DOM">源码链接</a>
+          <a href="https://github.com/LiJun14578963/-DOM/blob/main/src/dom.js/">项目预览</a>
+          </span>
+        </header>
+        <p></p>
+      </li>
+
     </ul>
   </section>
-  <section class="jobs"><h2>工作经历</h2>
+
+  <section class="jobs">
+    <h2>工作经历</h2>
     <ol>
       <li>
-        <header><h3> 深圳腾美广告有限公司 </h3> <h4>前端开发工程师</h4> <span><time>2020年3月</time>~<time>2021年2月</time></span>
+        <header>
+          <h3> 深圳腾美广告有限公司 </h3>
+          <h4>前端开发工程师</h4>
+          <span><time>2020年3月</time>~<time>2021年2月</time></span>
         </header>
         <ul>
-          <li> 1.独立负责移动端页面开发及二次开发</li>
-          <li> 2.服务于金蝶,时科,管易云,安印等企业的官网前端页面,管理后台开发,及活动页面</li>
-          <li> 3.独立负责Svip小程序, Svip官网 ,Vue时时彩</li>
+          <li>
+            1.独立负责移动端页面开发及二次开发
+          </li>
+          <li>
+            2.服务于金蝶,时科,管易云,安印等企业的官网前端页面,管理后台开发,及活动页面
+          </li>
+          <li>
+            3.独立负责Svip小程序, Svip官网 ,Vue时时彩
+          </li>
         </ul>
-        <div class="mt14"> 主要基于两个大客户做wordPress对网站做开发维护及二次开发，期间做过一套商家管理端和小程序toB
-          toC，达到了 整个营销系统闭合，为商家提供产品入驻，小程序端配置等等，我负责其中toB的小程序些注册，登录，支付，权限的
+        <div class="mt14">
+          主要基于两个大客户做wordPress对网站做开发维护及二次开发，期间做过一套商家管理端和小程序toB toC，达到了
+          整个营销系统闭合，为商家提供产品入驻，小程序端配置等等，我负责其中toB的小程序些注册，登录，支付，权限的
           增删改功能，期间做过一些基于微信的H5活动和一个时时彩的网站。
         </div>
-        <div class="mt14"> 技术栈：vue2 | wordPress | ElementUi | 小程序</div>
+        <div class="mt14">
+          技术栈：vue2 | wordPress | ElementUi | 小程序
+        </div>
+
+
       </li>
       <li>
-        <header><h3> 湖南群鲜荟萃科技有限公司 </h3> <h4>前端开发工程师</h4> <span><time>2021年3月</time>~<time>2023年1月</time></span>
+        <header>
+          <h3> 湖南群鲜荟萃科技有限公司 </h3>
+          <h4>前端开发工程师</h4>
+          <span><time>2021年3月</time>~<time>2023年1月</time></span>
         </header>
         <ul>
-          <li> 1.负责管理后台的基础代码及业务开发</li>
-          <li> 2.负责常规页面增删改查及代码优化</li>
+          <li>
+            1.负责管理后台的基础代码及业务开发
+          </li>
+          <li>
+            2.负责常规页面增删改查及代码优化
+          </li>
           3.二次维护开发
-          <li> 4.配合不同业务部门做需求协调</li>
+          <li>
+            4.配合不同业务部门做需求协调
+          </li>
         </ul>
-        <div class="mt14"> 实现版本迭代和基础维护，配合业务部门实现版本新需求以及对旧项目的维护</div>
-        <div class="mt14"> 技术栈：vue2 | ElementUi | 小程序</div>
+        <div class="mt14">
+          实现版本迭代和基础维护，配合业务部门实现版本新需求以及对旧项目的维护
+        </div>
+        <div class="mt14">
+          技术栈：vue2 | ElementUi | 小程序
+        </div>
       </li>
     </ol>
   </section>
+
 </article>
 <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
-<script src="main.935135c7.js"></script>
+<script src="/main.1f19ae8e.js"></script>
 </body>
+
 </html>
